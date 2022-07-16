@@ -3,10 +3,29 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
+import $ from 'jquery';
 
 function PageNavbar() {
+
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 0) {
+                $("#navbar").addClass("navbar-light");
+                $("#navbar").removeClass("navbar-dark");
+                $("#navbar").addClass("bg-light");
+                $("#navbar").removeClass("bg-dark");
+            }
+            else {
+                $("#navbar").addClass("navbar-dark");
+                $("#navbar").removeClass("navbar-light");
+                $("#navbar").addClass("bg-dark");
+                $("#navbar").removeClass("bg-light");
+            }
+        })
+    })
+
     return (
-        <Navbar bg="dark" fixed='top' variant='dark' expand="lg">
+        <Navbar id='navbar' bg="dark" fixed='top' variant='dark' expand="lg">
             <Container>
                 <Navbar.Brand href="#home">boombit.</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />

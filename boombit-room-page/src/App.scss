@@ -75,6 +75,39 @@ body {
     box-shadow: none;
     border: none;
 }
+/*navbar-dark*/
+.navbar-light .navbar-nav .btn-outline-secondary {
+    color: $secondary-2;
+    border-color: $secondary-2;
+}
+
+.navbar-light .navbar-nav .btn-check:focus + .btn-outline-secondary, 
+.navbar-light .navbar-nav .btn-outline-secondary:focus, 
+.navbar-light .navbar-nav .btn-check:hover + .btn-outline-secondary, 
+.navbar-light .navbar-nav .btn-outline-secondary:hover{
+    color: $secondary;
+}
+
+.navbar-light .navbar-nav .navbar-nav .btn{
+    color: $secondary-2;
+    border-color: $secondary-2;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: $secondary-2;
+}
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link.active{
+    padding-bottom: .4em;
+    border-bottom: .1em solid $primary;
+    border-bottom-width: medium;
+    text-decoration: solid;
+}
+
+.navbar-light .navbar-nav  > .nav-link:focus-visible, .navbar-light .navbar-nav .nav-link:focus-visible{
+    box-shadow: none;
+    border: none;
+}
 
 /*********************************************************************************
 ******************************* pg1 *******************************************
