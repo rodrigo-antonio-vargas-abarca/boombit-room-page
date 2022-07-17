@@ -10485,12 +10485,10 @@ footer .fa-2x {
 **********************************************************************************/
 .section-contacts {
   background-image: url("./images/contacts-bg.png");
-  height: 100vh;
+  height: 100vh !important;
   background-repeat: no-repeat;
   background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin: 0px !important;
 }
 
 .section-contacts h1, .section-contacts .h1 {
