@@ -10287,6 +10287,84 @@ body {
   border: none;
 }
 
+/*navbar-collapse*/
+.navbar:has(.show) {
+  padding-left: 30% !important;
+  width: 70% !important;
+}
+
+.navbar .navbar-collapse.collapsing {
+  display: none;
+}
+
+.navbar .navbar-collapse.collapse.show {
+  text-align: center;
+}
+
+.navbar-collapse.collapse.show .nav-link,
+.navbar-collapse.collapsing .nav-link {
+  border: none;
+}
+
+.navbar-dark .navbar-collapse.collapse.show,
+.navbar-dark .navbar-collapse.collapsing {
+  background-color: #010101;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.navbar-dark .navbar-collapse.collapse.show .nav-link,
+.navbar-dark .navbar-collapse.collapsing .nav-link {
+  color: #F1F1F1;
+}
+
+.navbar-light .navbar-collapse.collapse.show .nav-link,
+.navbar-light .navbar-collapse.collapsing .nav-link {
+  color: #010101;
+}
+
+.navbar-dark .navbar-collapse.collapse.show .nav-link.nav-link.active,
+.navbar-light .navbar-collapse.collapse.show .nav-link.nav-link.active,
+.navbar-dark .navbar-collapse.collapsing .nav-link.nav-link.active,
+.navbar-light .navbar-collapse.collapsing .nav-link.nav-link.active {
+  color: #FF4713;
+  padding-bottom: 0.5rem;
+}
+
+.navbar .navbar-collapse.collapse.show .btn,
+.navbar .navbar-collapse.collapsing .btn {
+  margin-top: 1vh;
+  margin: 3% 8%;
+  height: 4em;
+}
+
+.navbar-light .navbar-collapse.collapse.show .btn,
+.navbar-light .navbar-collapse.collapsing .btn {
+  color: #010101;
+  border-color: #010101;
+}
+
+.navbar-light .navbar-collapse.collapse.show .btn:active,
+.navbar-light .navbar-collapse.collapse.show .btn:focus,
+.navbar-light .navbar-collapse.collapsing .btn:active,
+.navbar-light .navbar-collapse.collapsing .btn:focus {
+  color: #F1F1F1;
+  border-color: #F1F1F1;
+}
+
+.navbar .btn-icon {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-dark .btn-icon {
+  color: #F1F1F1;
+}
+
+.navbar-light .btn-icon {
+  color: #010101;
+}
+
 /*********************************************************************************
 ******************************* pg1 *******************************************
 **********************************************************************************/
