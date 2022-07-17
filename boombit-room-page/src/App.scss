@@ -213,7 +213,8 @@ body {
 ******************************* Inputs *******************************************
 **********************************************************************************/
 
-.form-control, .form-control:focus {
+.form-control,
+.form-control:focus {
     border-radius: 10px;
     background-color: transparent;
 }
@@ -223,13 +224,13 @@ body {
 }
 
 .bg-dark .form-control {
-    border-color: $light !important;
-    color: $light !important;
+    border-color: $light  !important;
+    color: $light  !important;
 }
 
 .bg-light .form-control {
-    border-color: $dark !important;
-    color: $dark !important;
+    border-color: $dark  !important;
+    color: $dark  !important;
 }
 
 .form-floating>.form-control:focus,
@@ -254,13 +255,13 @@ body {
 .bg-dark .form-floating>.form-control:focus~label,
 .bg-dark .form-floating>.form-control:not(:placeholder-shown)~label,
 .bg-dark .form-floating>.form-select~label {
-    background-color: $dark !important;
+    background-color: $dark  !important;
 }
 
 .bg-light .form-floating>.form-control:focus~label,
 .bg-light .form-floating>.form-control:not(:placeholder-shown)~label,
 .bg-light .form-floating>.form-select~label {
-    background-color: $light !important;
+    background-color: $light  !important;
 }
 
 /*********************************************************************************
@@ -292,12 +293,12 @@ footer ul {
     text-align: start;
 }
 
-footer ul li{
+footer ul li {
     margin-top: .8vh;
 }
 
 footer ul li a {
-    color: $secondary-2 !important;
+    color: $secondary-2  !important;
     text-decoration: none;
     font-weight: bold;
 }
@@ -318,11 +319,43 @@ footer .fa-2x {
     margin: 0px !important;
 }
 
-.section-contacts h1{
+.section-contacts h1 {
     font-weight: bold !important;
 }
 
-.pg2 {
-    background-color: #F1F1F1;
+.section-blog {
+    background-color: $dark;
     height: 100vh;
+    max-width: 100%;
+    text-align: center;
+}
+
+.section-blog .container {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    padding: 2vh;
+}
+
+.section-blog .container .card {
+    min-width: 15rem;
+    max-width: 15rem;
+    max-height: 50vh;
+    min-height: 50vh;
+    border-radius: 8px;
+    padding: 0;
+    border: none;
+    text-align: start;
+}
+
+.section-blog .container .card .card-title{
+    color: $secondary-2;
+    text-transform: capitalize;
+    font-size: .8rem;
+    font-weight: bold !important;
+}
+
+.section-blog .container .card .card-text{
+    color: $primary-2;
+    font-weight: bold !important;
 }

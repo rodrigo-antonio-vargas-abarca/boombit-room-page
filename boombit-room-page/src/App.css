@@ -10388,7 +10388,8 @@ body {
 /*********************************************************************************
 ******************************* Inputs *******************************************
 **********************************************************************************/
-.form-control, .form-control:focus {
+.form-control,
+.form-control:focus {
   border-radius: 10px;
   background-color: transparent;
 }
@@ -10495,9 +10496,41 @@ footer .fa-2x {
   font-weight: bold !important;
 }
 
-.pg2 {
-  background-color: #F1F1F1;
+.section-blog {
+  background-color: #010101;
   height: 100vh;
+  max-width: 100%;
+  text-align: center;
+}
+
+.section-blog .container {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: scroll;
+  padding: 2vh;
+}
+
+.section-blog .container .card {
+  min-width: 15rem;
+  max-width: 15rem;
+  max-height: 50vh;
+  min-height: 50vh;
+  border-radius: 8px;
+  padding: 0;
+  border: none;
+  text-align: start;
+}
+
+.section-blog .container .card .card-title {
+  color: #FF4713;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  font-weight: bold !important;
+}
+
+.section-blog .container .card .card-text {
+  color: #5C0F8B;
+  font-weight: bold !important;
 }
 
 /*# sourceMappingURL=App.css.map */
