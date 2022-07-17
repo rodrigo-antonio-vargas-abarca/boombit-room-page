@@ -10393,6 +10393,10 @@ body {
   background-color: transparent;
 }
 
+.form-control {
+  background-color: transparent !important;
+}
+
 .bg-dark .form-control {
   border-color: #FFFFFF !important;
   color: #FFFFFF !important;
@@ -10477,15 +10481,20 @@ footer .fa-2x {
 }
 
 /*********************************************************************************
-******************************* pg1 *******************************************
+******************************* pages *******************************************
 **********************************************************************************/
-.pg1 {
-  /*background-image: url('./images/bg1.png');*/
+.section-contacts {
+  background-image: url("./images/contacts-bg.png");
   height: 100vh;
   background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.section-contacts h1, .section-contacts .h1 {
+  font-weight: bold !important;
 }
 
 .pg2 {
