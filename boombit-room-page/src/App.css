@@ -10548,9 +10548,7 @@ footer .fa-2x {
   word-wrap: break-word;
 }
 
-/*********************************************************************************
-************************** scrollbar *********************************************
-**********************************************************************************
+/******************** scrollbar ************************
 /* width */
 .section-blog ::-webkit-scrollbar {
   width: 0px;
@@ -10570,6 +10568,41 @@ footer .fa-2x {
 /* Handle on hover */
 .section-blog ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.section-formula {
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.section-formula .header {
+  max-width: 90%;
+}
+
+.section-formula h1, .section-formula .h1 {
+  color: #5C0F8B;
+  font-weight: bold;
+}
+
+.section-formula .card {
+  border: none;
+  text-align: start;
+}
+
+.section-formula .card .card-title {
+  color: #FF4713;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.section-formula .card .card-subtitle {
+  color: #5C0F8B;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.section-formula .card .card-text {
+  color: #010101;
 }
 
 /*# sourceMappingURL=App.css.map */

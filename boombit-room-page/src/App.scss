@@ -374,9 +374,7 @@ footer .fa-2x {
     word-wrap: break-word;
 }
 
-/*********************************************************************************
-************************** scrollbar *********************************************
-**********************************************************************************
+/******************** scrollbar ************************
 /* width */
 .section-blog ::-webkit-scrollbar {
     width: 0px;
@@ -396,4 +394,39 @@ footer .fa-2x {
 /* Handle on hover */
 .section-blog ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+.section-formula {
+    background-color: $light;
+    text-align: center;
+}
+
+.section-formula .header {
+    max-width: 90%;
+}
+
+.section-formula h1 {
+    color: $primary-2;
+    font-weight: bold;
+}
+
+.section-formula .card {
+    border: none;
+    text-align: start;
+}
+
+.section-formula .card .card-title{
+    color: $secondary-2;
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.section-formula .card .card-subtitle{
+    color: $primary-2;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.section-formula .card .card-text{
+    color: $primary;
 }
