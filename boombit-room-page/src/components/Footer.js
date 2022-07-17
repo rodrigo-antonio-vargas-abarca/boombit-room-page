@@ -16,8 +16,8 @@ import Container from 'react-bootstrap/Container';
 function Footer() {
     return (
         <MDBFooter className='text-center h-100' color='white' bgColor='dark'>
-            <MDBContainer className='p-4 h-100'>
-                <section className='h-100'>
+            <MDBContainer className='row p-4 h-100'>
+                <section className='h-100 col-sm-12 col-md-6 px-md-5 px-sm-0'>
                     <form action='h-100'>
                         <div className='row d-flex justify-content-center'>
 
@@ -49,11 +49,11 @@ function Footer() {
                     </form>
                 </section>
 
-                <section className='mt-5'>
-                    <MDBRow>
-                        <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
+                <section className='mt-5 col-sm-12 col-md-6 d-flex flex-column justify-content-center'>
+                    <MDBRow className='mt-sm-0 mt-md-5 ml-sm-0 ml-md-5'>
+                        <MDBCol lg='3' md='6' className='mb-4 mb-md-0 h-100 d-flex flex-row'>
 
-                            <ul className='list-unstyled text-align-start mb-0'>
+                            <ul className='list-unstyled text-align-start align-middle mb-0 mx-md-5 mx-sm-0'>
                                 <li>
                                     <a href='#!' className='text-primary-2'>
                                         Menú
@@ -81,21 +81,24 @@ function Footer() {
                                 </li>
                             </ul>
                         </MDBCol>
-                        <Container className='d-flex justify-content-around mt-5'>
-                            <Button className='btn btn-icon'>
-                                <FontAwesomeIcon icon={faFacebook} size="2x" />
-                            </Button>
-                            <Button className='btn btn-icon'>
-                                <FontAwesomeIcon icon={faTwitter} size="2x" />
-                            </Button>
-                            <Button className='btn btn-icon'>
-                                <FontAwesomeIcon icon={faInstagram} size="2x" />
-                            </Button>
-                            <Button className='btn btn-icon'>
-                                <FontAwesomeIcon icon={faWhatsapp} size="2x" />
-                            </Button>
-                        </Container>
                     </MDBRow>
+                </section>
+
+                <section className='mt-5 col-sm-12 col-md-6'>
+                    <Container className='d-flex justify-content-around'>
+                        <Button className='btn btn-icon'>
+                            <FontAwesomeIcon icon={faFacebook} size="2x" />
+                        </Button>
+                        <Button className='btn btn-icon'>
+                            <FontAwesomeIcon icon={faTwitter} size="2x" />
+                        </Button>
+                        <Button className='btn btn-icon'>
+                            <FontAwesomeIcon icon={faInstagram} size="2x" />
+                        </Button>
+                        <Button className='btn btn-icon'>
+                            <FontAwesomeIcon icon={faWhatsapp} size="2x" />
+                        </Button>
+                    </Container>
                 </section>
             </MDBContainer>
 
