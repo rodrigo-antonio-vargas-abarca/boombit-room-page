@@ -1,27 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-$primary:       #010101;
-$primary-2:     #5C0F8B;
-$secondary:     #F1F1F1;
-$secondary-2:   #FF4713;
-$success:       #1A9926;
-$info:          #30BCED;
-$warning:       #FFDA6B;
-$danger:        #FF375F;
-$light:         #FFFFFF;
-$dark:          #323232;
+$primary: #010101;
+$primary-2: #5C0F8B;
+$secondary: #F1F1F1;
+$secondary-2: #FF4713;
+$success: #1A9926;
+$info: #30BCED;
+$warning: #FFDA6B;
+$danger: #FF375F;
+$light: #FFFFFF;
+$dark: #010101;
 
 $theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "secondary-2":  $secondary-2,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
-); 
+    "primary": $primary,
+    "secondary": $secondary,
+    "secondary-2": $secondary-2,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark
+);
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -30,16 +30,31 @@ body {
     font-family: 'Montserrat' !important;
 }
 
-.btn-outline-secondary:hover{
+.text-secondary-2 {
+    color: $secondary-2;
+}
+
+.btn-primary-2 {
+    background-color: $primary-2;
+    color: $light;
+}
+
+.btn-outline-secondary:hover {
     background-color: $secondary-2;
     border-color: $secondary-2;
     color: $light;
 }
 
-.btn-check:focus + .btn-outline-secondary, .btn-outline-secondary:focus {
+.btn-check:focus+.btn-outline-secondary,
+.btn-outline-secondary:focus {
     box-shadow: none;
     background-color: $secondary-2;
     border: none;
+}
+
+.btn svg {
+    margin-right: .5em;
+    margin-left: -.5em;
 }
 
 /*********************************************************************************
@@ -50,61 +65,67 @@ body {
     background-color: transparent !important;
 }
 
-.navbar-brand{
+.navbar-brand {
     font-weight: bold;
 }
 
-.navbar-nav .nav-link, .navbar-nav .btn{
+.navbar-nav .nav-link,
+.navbar-nav .btn {
     font-size: .7em;
     font-weight: bold;
     margin: auto 1em;
 }
 
-.navbar-dark .navbar-nav .nav-link{
+.navbar-dark .navbar-nav .nav-link {
     color: $secondary-2;
 }
 
-.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .nav-link.active{
+.navbar-dark .navbar-nav .show>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active {
     padding-bottom: .4em;
     border-bottom: .1em solid $secondary-2;
     border-bottom-width: medium;
     text-decoration: solid;
 }
 
-.navbar-dark .navbar-nav  > .nav-link:focus-visible, .navbar-dark .navbar-nav .nav-link:focus-visible{
+.navbar-dark .navbar-nav>.nav-link:focus-visible,
+.navbar-dark .navbar-nav .nav-link:focus-visible {
     box-shadow: none;
     border: none;
 }
+
 /*navbar-dark*/
 .navbar-light .navbar-nav .btn-outline-secondary {
     color: $secondary-2;
     border-color: $secondary-2;
 }
 
-.navbar-light .navbar-nav .btn-check:focus + .btn-outline-secondary, 
-.navbar-light .navbar-nav .btn-outline-secondary:focus, 
-.navbar-light .navbar-nav .btn-check:hover + .btn-outline-secondary, 
-.navbar-light .navbar-nav .btn-outline-secondary:hover{
+.navbar-light .navbar-nav .btn-check:focus+.btn-outline-secondary,
+.navbar-light .navbar-nav .btn-outline-secondary:focus,
+.navbar-light .navbar-nav .btn-check:hover+.btn-outline-secondary,
+.navbar-light .navbar-nav .btn-outline-secondary:hover {
     color: $secondary;
 }
 
-.navbar-light .navbar-nav .navbar-nav .btn{
+.navbar-light .navbar-nav .navbar-nav .btn {
     color: $secondary-2;
     border-color: $secondary-2;
 }
 
-.navbar-light .navbar-nav .nav-link{
+.navbar-light .navbar-nav .nav-link {
     color: $secondary-2;
 }
 
-.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link.active{
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link.active {
     padding-bottom: .4em;
     border-bottom: .1em solid $primary;
     border-bottom-width: medium;
     text-decoration: solid;
 }
 
-.navbar-light .navbar-nav  > .nav-link:focus-visible, .navbar-light .navbar-nav .nav-link:focus-visible{
+.navbar-light .navbar-nav>.nav-link:focus-visible,
+.navbar-light .navbar-nav .nav-link:focus-visible {
     box-shadow: none;
     border: none;
 }
@@ -141,28 +162,28 @@ body {
     color: $secondary;
 }
 
-.navbar-light .navbar-collapse.collapse.show .nav-link, 
-.navbar-light .navbar-collapse.collapsing .nav-link{
+.navbar-light .navbar-collapse.collapse.show .nav-link,
+.navbar-light .navbar-collapse.collapsing .nav-link {
     color: $primary;
 }
 
 .navbar-dark .navbar-collapse.collapse.show .nav-link.nav-link.active,
-.navbar-light .navbar-collapse.collapse.show .nav-link.nav-link.active, 
+.navbar-light .navbar-collapse.collapse.show .nav-link.nav-link.active,
 .navbar-dark .navbar-collapse.collapsing .nav-link.nav-link.active,
-.navbar-light .navbar-collapse.collapsing .nav-link.nav-link.active{
+.navbar-light .navbar-collapse.collapsing .nav-link.nav-link.active {
     color: $secondary-2;
     padding-bottom: 0.5rem;
 }
 
-.navbar .navbar-collapse.collapse.show .btn, 
-.navbar .navbar-collapse.collapsing .btn{
+.navbar .navbar-collapse.collapse.show .btn,
+.navbar .navbar-collapse.collapsing .btn {
     margin-top: 1vh;
     margin: 3% 8%;
     height: 4em;
 }
 
-.navbar-light .navbar-collapse.collapse.show .btn, 
-.navbar-light .navbar-collapse.collapsing .btn{
+.navbar-light .navbar-collapse.collapse.show .btn,
+.navbar-light .navbar-collapse.collapsing .btn {
     color: $primary;
     border-color: $primary;
 }
@@ -170,7 +191,7 @@ body {
 .navbar-light .navbar-collapse.collapse.show .btn:active,
 .navbar-light .navbar-collapse.collapse.show .btn:focus,
 .navbar-light .navbar-collapse.collapsing .btn:active,
-.navbar-light .navbar-collapse.collapsing .btn:focus{
+.navbar-light .navbar-collapse.collapsing .btn:focus {
     color: $secondary;
     border-color: $secondary;
 }
@@ -189,10 +210,101 @@ body {
 }
 
 /*********************************************************************************
+******************************* Inputs *******************************************
+**********************************************************************************/
+
+.form-control, .form-control:focus {
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.bg-dark .form-control {
+    border-color: $light !important;
+    color: $light !important;
+}
+
+.bg-light .form-control {
+    border-color: $dark !important;
+    color: $dark !important;
+}
+
+.form-floating>.form-control:focus,
+.form-floating>.form-control:not(:placeholder-shown) {
+    padding: .5rem 1rem;
+}
+
+.form-floating>.form-control {
+    padding: .5rem 1rem;
+}
+
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label,
+.form-floating>.form-select~label {
+    transform: scale(0.85) translateY(-1rem) translateX(0.15rem) !important;
+    opacity: 1 !important;
+    padding: 0 .5em !important;
+    height: 1.5em !important;
+    margin-left: .5em !important;
+}
+
+.bg-dark .form-floating>.form-control:focus~label,
+.bg-dark .form-floating>.form-control:not(:placeholder-shown)~label,
+.bg-dark .form-floating>.form-select~label {
+    background-color: $dark !important;
+}
+
+.bg-light .form-floating>.form-control:focus~label,
+.bg-light .form-floating>.form-control:not(:placeholder-shown)~label,
+.bg-light .form-floating>.form-select~label {
+    background-color: $light !important;
+}
+
+/*********************************************************************************
+******************************* footer *******************************************
+**********************************************************************************/
+
+footer .container {
+    max-width: 90% !important;
+}
+
+footer .footer-brand {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+footer strong {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+footer .btn {
+    height: 3em;
+}
+
+footer ul {
+    text-align: start;
+}
+
+footer ul li{
+    margin-top: .8vh;
+}
+
+footer ul li a {
+    color: $secondary-2 !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .fa-2x {
+    font-size: 1.8em;
+}
+
+
+/*********************************************************************************
 ******************************* pg1 *******************************************
 **********************************************************************************/
 .pg1 {
-    background-image: url('./images/bg1.png');
+    /*background-image: url('./images/bg1.png');*/
     height: 100vh;
     background-repeat: no-repeat;
     display: flex;
