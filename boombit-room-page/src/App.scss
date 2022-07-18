@@ -276,6 +276,19 @@ footer .container {
     margin-right: 0%;
 }
 
+footer .container .form {
+    @include media-breakpoint-up(sm) { 
+        justify-content: start !important;
+        text-align: start !important;
+    }
+}
+
+footer .container .form button {
+    @include media-breakpoint-up(sm) { 
+        width: 50% !important;
+    }
+}
+
 footer .footer-brand {
     font-weight: bold;
     font-size: 3rem;
@@ -322,6 +335,12 @@ footer .fa-2x {
 
 .section-contacts h1 {
     font-weight: bold !important;
+}
+
+.section-contacts button {
+    @include media-breakpoint-up(sm) { 
+        width: 70% !important;
+    }
 }
 
 .section-blog {

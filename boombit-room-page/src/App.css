@@ -10652,6 +10652,19 @@ footer .container {
   margin-right: 0%;
 }
 
+@media (min-width: 576px) {
+  footer .container .form {
+    justify-content: start !important;
+    text-align: start !important;
+  }
+}
+
+@media (min-width: 576px) {
+  footer .container .form button {
+    width: 50% !important;
+  }
+}
+
 footer .footer-brand {
   font-weight: bold;
   font-size: 3rem;
@@ -10697,6 +10710,12 @@ footer .fa-2x {
 
 .section-contacts h1, .section-contacts .h1 {
   font-weight: bold !important;
+}
+
+@media (min-width: 576px) {
+  .section-contacts button {
+    width: 70% !important;
+  }
 }
 
 .section-blog {
