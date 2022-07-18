@@ -19,7 +19,7 @@ function Footer() {
             <MDBContainer className='row p-4 h-100'>
                 <section className='h-100 col-sm-12 col-md-6 px-md-5 px-sm-0'>
                     <form action='h-100'>
-                        <div className='row d-flex justify-content-center'>
+                        <div className='row d-flex justify-content-center form'>
 
                             <h1 className='text-light footer-brand mt-5'>boombit.</h1>
 

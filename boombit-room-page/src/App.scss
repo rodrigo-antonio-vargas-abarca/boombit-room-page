@@ -25,6 +25,7 @@ $theme-colors: (
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/react-alice-carousel/lib/scss/alice-carousel.scss";
 
 body {
     font-family: 'Montserrat' !important;
@@ -275,6 +276,19 @@ footer .container {
     margin-right: 0%;
 }
 
+footer .container .form {
+    @include media-breakpoint-up(sm) { 
+        justify-content: start !important;
+        text-align: start !important;
+    }
+}
+
+footer .container .form button {
+    @include media-breakpoint-up(sm) { 
+        width: 50% !important;
+    }
+}
+
 footer .footer-brand {
     font-weight: bold;
     font-size: 3rem;
@@ -323,9 +337,14 @@ footer .fa-2x {
     font-weight: bold !important;
 }
 
+.section-contacts button {
+    @include media-breakpoint-up(sm) { 
+        width: 70% !important;
+    }
+}
+
 .section-blog {
     background-color: $dark;
-    height: 100vh;
     max-width: 100%;
     text-align: center;
 }
@@ -403,7 +422,8 @@ footer .fa-2x {
 
 .section-formula .header {
     max-width: 90%;
-    @include media-breakpoint-up(sm) { 
+
+    @include media-breakpoint-up(sm) {
         max-width: 96%;
     }
 }
@@ -418,19 +438,19 @@ footer .fa-2x {
     text-align: start;
 }
 
-.section-formula .card .card-title{
+.section-formula .card .card-title {
     color: $secondary-2;
     font-size: .8em;
     font-weight: bold;
 }
 
-.section-formula .card .card-subtitle{
+.section-formula .card .card-subtitle {
     color: $primary-2;
     font-size: 1em;
     font-weight: bold;
 }
 
-.section-formula .card .card-text{
+.section-formula .card .card-text {
     color: $primary;
 }
 
@@ -474,4 +494,35 @@ footer .fa-2x {
 .section-value .card.user-card .card-text {
     font-size: .8em;
     color: #555;
+}
+
+.section-axes {
+    text-align: center;
+}
+
+.section-axes h1 {
+    color: $primary-2;
+    font-weight: bold;
+}
+
+.section-axes .alice-carousel .alice-carousel__dots-item:not(.__custom):hover,
+.alice-carousel__dots-item:not(.__custom).__active {
+    background-color: $secondary-2  !important;
+}
+
+.section-axes .alice-carousel .alice-carousel__stage-item {
+    width: 100% !important;
+    @include media-breakpoint-up(sm) {
+        width: 35% !important;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+.section-axes .alice-carousel .alice-carousel__next-btn {
+    display: none;
+}
+
+.section-axes .alice-carousel .alice-carousel__prev-btn {
+    display: none;
 }
