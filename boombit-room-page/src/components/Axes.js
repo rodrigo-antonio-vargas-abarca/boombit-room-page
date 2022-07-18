@@ -8,14 +8,14 @@ import imageCarousel4 from '../images/pages/axes/img-4.png';
 const handleDragStart = (e) => e.preventDefault();
 
 const items = [
-  <img src={imageCarousel1} onDragStart={handleDragStart} alt=""/>,
-  <img src={imageCarousel2} onDragStart={handleDragStart} alt=""/>,
-  <img src={imageCarousel3} onDragStart={handleDragStart} alt=""/>,
-  <img src={imageCarousel4} onDragStart={handleDragStart} alt=""/>,
-  <img src={imageCarousel1} onDragStart={handleDragStart} alt=""/>,
-  <img src={imageCarousel2} onDragStart={handleDragStart} alt=""/>,
-  <img src={imageCarousel3} onDragStart={handleDragStart} alt=""/>,
-  <img src={imageCarousel4} onDragStart={handleDragStart} alt=""/>,
+  <img src={imageCarousel1} onDragStart={handleDragStart} role="show" alt=""/>,
+  <img src={imageCarousel2} onDragStart={handleDragStart} role="show" alt=""/>,
+  <img src={imageCarousel3} onDragStart={handleDragStart} role="show" alt=""/>,
+  <img src={imageCarousel4} onDragStart={handleDragStart} role="show" alt=""/>,
+  <img src={imageCarousel1} onDragStart={handleDragStart} role="show" alt=""/>,
+  <img src={imageCarousel2} onDragStart={handleDragStart} role="show" alt=""/>,
+  <img src={imageCarousel3} onDragStart={handleDragStart} role="show" alt=""/>,
+  <img src={imageCarousel4} onDragStart={handleDragStart} role="show" alt=""/>,
 ];
 
 function Axes() {

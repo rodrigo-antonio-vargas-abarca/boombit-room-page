@@ -5,7 +5,7 @@ import imgUser from '../images/pages/value/user.png';
 
 function Value() {
     return (
-        <div className='section-value'>
+        <div id='deputies' className='section-value'>
             <div className='row justify-content-center pb-5'>
                 <Card className='header px-2 col-sm-12 col-md-5 mt-5'>
                     <Card.Img src={imgValue} />
