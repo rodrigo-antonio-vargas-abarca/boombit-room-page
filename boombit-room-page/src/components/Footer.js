@@ -15,7 +15,7 @@ import Container from 'react-bootstrap/Container';
 
 function Footer() {
     return (
-        <MDBFooter className='text-center h-100' color='white' bgColor='dark'>
+        <MDBFooter id='affiliation' className='text-center h-100' color='white' bgColor='dark'>
             <MDBContainer className='row p-4 h-100'>
                 <section className='h-100 col-sm-12 col-md-6 px-md-5 px-sm-0'>
                     <form action='h-100'>
@@ -104,8 +104,8 @@ function Footer() {
 
             <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
                 © 2022 Copyright:
-                <a className='text-secondary-2' href='https://mdbootstrap.com/'>
-                    boombit-asset.com
+                <a className='text-secondary-2' href='https://github.com/rodrigo-antonio-vargas-abarca/'>
+                    rodrigo-vargas-abarca
                 </a>
             </div>
         </MDBFooter>

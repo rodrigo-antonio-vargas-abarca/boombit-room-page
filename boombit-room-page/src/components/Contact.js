@@ -9,7 +9,7 @@ import Button from 'react-bootstrap/Button';
 
 function Contact() {
     return (
-        <div className='w-100 h-100 row bg-dark text-light section-contacts d-flex flex-column justify-contet-center'>
+        <div id='home' className='w-100 h-100 row bg-dark text-light section-contacts d-flex flex-column justify-contet-center'>
             <div className='h-100 col-sm-12 col-md-6 mt-5 mx-md-5 mx-sm-0 d-flex flex-column justify-contet-center'>
                 <section className='mx-2 mt-5'>
                     <h1>Nuestros fieles amigos, Nuestras mascotas, Nuestras familias</h1>

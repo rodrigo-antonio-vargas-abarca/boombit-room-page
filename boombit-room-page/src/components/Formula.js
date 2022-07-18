@@ -4,7 +4,7 @@ import imageHeader from '../images/pages/formula/formula-header.png'
 
 function Formula() {
     return (
-        <div className='section-formula'>
+        <div id='activities' className='section-formula'>
             <h1 className='pt-5'>Ellos son especiales</h1>
             <div className='row'>
                 <Card className='header mx-4 col-12 mt-5'>
