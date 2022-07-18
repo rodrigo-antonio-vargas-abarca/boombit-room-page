@@ -6,13 +6,13 @@ import imgUser from '../images/pages/value/user.png';
 function Value() {
     return (
         <div className='section-value'>
-            <div className='row'>
-                <Card className='header px-2 col-sm-12 mt-5'>
+            <div className='row justify-content-center pb-5'>
+                <Card className='header px-2 col-sm-12 col-md-5 mt-5'>
                     <Card.Img src={imgValue} />
                 </Card>
-                <h1 className='mt-5'>Nuestras diferencias nos hacen mejores</h1>
-                <Card className="mt-5">
+                <Card className="my-auto col-sm-12 col-md-6">
                     <Card.Body>
+                        <Card.Title> <h1 className='mt-5 mb-5'>Nuestras diferencias nos hacen mejores</h1></Card.Title>
                         <Card.Text>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
                             <br />
