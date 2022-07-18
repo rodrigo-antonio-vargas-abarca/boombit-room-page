@@ -10578,6 +10578,11 @@ footer .fa-2x {
 .section-formula .header {
   max-width: 90%;
 }
+@media (min-width: 576px) {
+  .section-formula .header {
+    max-width: 96%;
+  }
+}
 
 .section-formula h1, .section-formula .h1 {
   color: #5C0F8B;

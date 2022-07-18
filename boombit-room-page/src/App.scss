@@ -403,6 +403,9 @@ footer .fa-2x {
 
 .section-formula .header {
     max-width: 90%;
+    @include media-breakpoint-up(sm) { 
+        max-width: 96%;
+    }
 }
 
 .section-formula h1 {
