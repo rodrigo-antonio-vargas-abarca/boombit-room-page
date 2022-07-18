@@ -433,3 +433,45 @@ footer .fa-2x {
 .section-formula .card .card-text{
     color: $primary;
 }
+
+.section-value {
+    background-color: $light;
+    text-align: center;
+}
+
+.section-value .card {
+    border: none;
+}
+
+.section-value .header .card-img {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.section-value h1 {
+    color: $primary-2;
+    font-weight: bold;
+}
+
+.section-value .card.user-card {
+    border: none;
+    padding: 1em;
+}
+
+.section-value .card.user-card .card-img {
+    border-radius: 50%;
+    height: 3.5em;
+    width: 3.5em;
+    margin: 1em auto !important;
+}
+
+.section-value .card.user-card .card-title {
+    color: $primary-2;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.section-value .card.user-card .card-text {
+    font-size: .8em;
+    color: #555;
+}
