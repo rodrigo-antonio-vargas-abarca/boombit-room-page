@@ -37,7 +37,7 @@ manejar las versiones del proyecto y recuerda actualizar la rama principal al
 entregar la solución.
 
 - Solution URL: [https://github.com/rodrigo-antonio-vargas-abarca/boombit-room-page]
-- Live Site URL: [https://62d4da99c1d65d5e8985c1ad--boombit-room-site-rava.netlify.app/]
+- Live Site URL: [https://62d51a8d4624d40b871543f5--boombit-room-site-rava.netlify.app/]
 
 Completa este archivo el archivo Readme con esta información basada en tu
 solución:
