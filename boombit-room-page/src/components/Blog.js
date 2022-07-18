@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import image1 from '../images/pages/blog/blog-1.png';
 import image2 from '../images/pages/blog/blog-2.png';
@@ -7,7 +6,7 @@ import image3 from '../images/pages/blog/blog-3.png';
 
 function Blog() {
     return (
-        <div className='section-blog'>
+        <div className='section-blog pb-4'>
             <h2 className='text-light font-weight-bold pt-4'>Blog</h2>
             <section className='container mt-4 mb-4'>
                 <Card className="mx-3">
