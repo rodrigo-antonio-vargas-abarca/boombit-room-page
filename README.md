@@ -64,7 +64,7 @@ solución:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [FontAwesome] (https://fontawesome.com/v5/docs/) - Icons
+- [FontAwesome](https://fontawesome.com/v5/docs/) - Icons
 - [React](https://reactjs.org/) - JS library
 - [JQuery](https://jquery.com/) - JS library
-- [ReactBootstrap] (https://react-bootstrap.github.io/) - For styles
+- [ReactBootstrap](https://react-bootstrap.github.io/) - For styles
